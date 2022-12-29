@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchenly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+    <!-- navbar start -->
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html" id="navbar-logo" ><img src="./images/logo.png" alt="logo" id="logo-image"></a>
+          <img src="./images/banner-aunty.png" alt="" class="banner-img">
+          <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-links" id="home-page">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="aboutus.html" class="navbar-links" id="about-page">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="" class="navbar-links" id="services-page"
+                >Login</a
+              >
+            </li>
+            <li class="navbar-btn">
+              <a href="" class="button" id="signup">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+
+        
+      </nav>
+    <!-- navbar end -->
+    <div class="banner-text">
+      <p>Try our random cooking service! 🧑🏻‍🍳
+        <br>
+        We will generate random meal suggestions based on 
+        what you like ❤️</p>
+    </div>
+    <!-- main part of website start-->
+    <div class="main">
+      <!-- main top layer start -->
+      <div class="main-top">
+        <!-- <div class="recipies-img">
+          <img src="./images/recipes-logo.png" alt="">
+        </div> -->
+        <div class="search-container">
+          <input type="text" id="box" list="category" placeholder="Search recepies and more..." class="search__box">
+          <datalist id="category">
+            <option value="Beef">
+              <option value="Breakfast">
+              <option value="Chicken">
+              <option value="Dessert">
+              <option value="Goat">
+              <option value="Lamb">
+              <option value="Pasta">
+              <option value="Pork">
+              <option value="Seafood">
+              <option value="Starter">
+              <option value="Vegan">
+              <option value="Vegetarian">
+          </datalist>
+          <i class="fas fa-search search__icon" id="icon" ></i>
+      </div>
+      </div>
+      <!-- main top layer search box end -->
+
+      <!-- main 2nd layer start here -->
+      <div class="two-layer">
+        <!-- categories container start here -->
+        <div class="categories-container">
+          <!-- categories item start here -->
+          <div class="categories-item">
+            <span class="categories-logo-bg">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </span>
+            <p>Breakfast</p>
+          </div>
+
+          <div class="categories-item">
+            <span class="categories-logo-bg">
+              <i class="fa-solid fa-egg"></i>
+            </span>
+            <p>Chicken</p>
+          </div>
+
+          <div class="categories-item">
+            <span class="categories-logo-bg">
+              <i class="fa-solid fa-fish"></i>
+            </span>
+            <p>Seafood</p>
+          </div>
+
+          <div class="categories-item">
+            <span class="categories-logo-bg">
+              <i class="fa-solid fa-seedling"></i>
+            </span>
+            <p>Vegan</p>
+          </div>
+
+          <div class="categories-item">
+            <span class="categories-logo-bg">
+              <i class="fa-solid fa-pizza-slice"></i>
+            </span>
+            <p>Pasta</p>
+          </div>
+
+          <div class="categories-item">
+            <span class="categories-logo-bg">
+              <i class="fa-solid fa-ice-cream"></i>
+            </span>
+            <p>Dessert</p>
+          </div>
+         <!-- categories item end here -->
+
+
+        </div>
+        <!-- categories container start here -->
+        <!-- random meal start here -->
+        <div class="randomMeal-container" id="randomMeal-container">
+          <div class="randomMeal-img" id="randomMeal-img">
+            <!-- <img src="./images/random-image.jpg" alt="random image"> -->
+          </div>
+          <div class="randomMeal-description" id="randomMeal-description">
+            <div class="meal-title" id="meal-title">
+            <!-- <h2 class="meal-title">Citrus Salad with berries</h2> -->
+          </div>
+            <p class="meal-description">When you eat food with your family and friends, it always tastes better!</p>
+            <button class="view-recipie" id="view-recipie">View Ingredients</button>
+          </div>
+        </div>
+
+        <!-- random meal end here -->
+        <!-- generate random meal start here  -->
+        <div class="generateMeal-container">
+          <h2 class="title">Having trouble deciding what to prepare for your next meal? 
+          </h2>
+
+          <p class="description">Click the icon below to
+            view the recipes for the finest foods.</p>
+            
+            <button class="view-recipie" id="generate-btn" onclick="window.location.reload()">
+              <i class="fa-sharp fa-solid fa-arrow-left"></i>
+              <p>Generate</p>
+            </button>
+        </div>
+        <!-- generate random meal end here -->
+      </div>
+    </div>
+
+    <!-- searched results -->
+    <div class="search-results" id="search-results">
+      <div class="search-text" id="search-text">
+        <h3>Searched result</h3>
+      </div>
+
+      <div class="search-meals" id="search-meals">
+      <!--   <div class="meal-card">
+          <img src="./images/random-image.jpg" alt="">
+          <h3>meal name</h3>
+          <button class="view-recipie">View Ingredients</button>
+        </div>
+
+        <div class="meal-card">
+          <img src="./images/random-image.jpg" alt="">
+          <h3>meal name</h3>
+          <button class="view-recipie">View Ingredients</button>
+        </div>
+
+
+        <div class="meal-card">
+          <img src="./images/random-image.jpg" alt="">
+          <h3>meal name</h3>
+          <button class="view-recipie">View Ingredients</button>
+        </div>
+
+
+        <div class="meal-card">
+          <img src="./images/random-image.jpg" alt="">
+          <h3>meal name</h3>
+          <button class="view-recipie">View Ingredients</button>
+        </div>
+
+
+        <div class="meal-card">
+          <img src="./images/random-image.jpg" alt="">
+          <h3>meal name</h3>
+          <button class="view-recipie">View Ingredients</button>
+        </div>
+
+
+        <div class="meal-card">
+          <img src="./images/random-image.jpg" alt="">
+          <h3>meal name</h3>
+          <button class="view-recipie">View Ingredients</button>
+        </div>
+
+
+        <div class="meal-card">
+          <img src="./images/random-image.jpg" alt="">
+          <h3>meal name</h3>
+          <button class="view-recipie">View Ingredients</button>
+        </div>
+
+
+        <div class="meal-card">
+          <img src="./images/random-image.jpg" alt="">
+          <h3>meal name</h3>
+          <button class="view-recipie">View Ingredients</button>
+        </div> -->
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- searched results end-->
+
+</div>
+
+<!-- <div class="modal">
+
+
+  <div class="close-btn">
+    <i class="fa-regular fa-circle-xmark"></i>
+  </div>
+
+
+  <div class="modal-head">
+    <h2 class="meal-name">Meal Name</h2>
+    <img src="./images/random-image.jpg" alt=""> -->
+  <!-- </div>
+  <div class="ingredients">
+    <h3>Ingredients</h3>
+    <ul id="ingredients-list">
+      <li class="ingredients-list-item">item 1</li>
+      <li class="ingredients-list-item">item 2</li>
+      <li class="ingredients-list-item">item 3</li>
+      <li class="ingredients-list-item">item 4</li>
+      <li class="ingredients-list-item">item 5</li>
+      <li class="ingredients-list-item">item 6</li>
+      <li class="ingredients-list-item">item 7</li>
+    </ul>
+  </div>
+</div>
+
+
+ -->
+
+<div class="modal-container" id="modal-container">
+  
+  <div class="modal">
+    <div id="name"></div>
+    <div class="header">
+    <h1>Ingredients</h1>
+    <i id="cross-icon" class="fa-solid fa-xmark"></i>
+  </div>
+  <div id="ingre-image"><img  src="./images/random-image.jpg" alt=""></div>
+  <div class="ingredients">
+    
+      <!-- <div class="item-box">
+      <li class="ingredients-item">item 1</li>
+    </div>
+    <div class="item-box">
+      <li class="ingredients-item">item 2</li>
+    </div>
+    <div class="item-box">
+      <li class="ingredients-item">item 3</li>
+    </div>
+    <div class="item-box">
+      <li class="ingredients-item">item 4</li>
+    </div>
+    <div class="item-box">
+      <li class="ingredients-item">item 5</li>
+    </div>
+    <div class="item-box">
+      <li class="ingredients-item">item 6</li>
+    </div> -->
+     
+  </div>
+    <!-- <button id="close">Close</button> -->
+  </div>
+</div>
+
+
+
+<footer>
+  <p id="copyright">Copyright <span><i class="fa-regular fa-copyright"></i></span> 2022 kitchenly. All rights reserved</p>
+  <div class="contact-logos">
+    <a href="https://www.instagram.com/_taniishk_/" target="_blank"><i id="instagram" class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/tanishqpatidar/" target="_blank"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+   <a href="https://github.com/Tanishqpati" target="_blank"><i id="github" class="fa-brands fa-github"></i></a> 
+  </div>
+  <p>Made with <span id="heart"><i class="fa-solid fa-heart"></i></span> by Tanishq</p>
+  
+</footer>
+<script src="app.js"></script>    
+</body>
+</html>

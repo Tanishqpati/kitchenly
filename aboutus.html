@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About us</title>
+        <link rel="stylesheet" href="about.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="icon" href="{% static 'PICO-LOGO-SHORT.png' %}" type="image/gif">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      </head>
+<body>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container">
+              <a href="index.html" id="navbar-logo" ><img src="./images/logo.png" alt="logo" id="logo-image"></a>
+              <!-- <img src="./images/banner-aunty.png" alt="" class="banner-img"> -->
+              <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <ul class="navbar-menu">
+                <li class="navbar-item">
+                  <a href="index.html" class="navbar-links" id="home-page">Home</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="aboutus.html" target="_blank" class="navbar-links" id="about-page">About</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="" class="navbar-links" id="services-page"
+                    >Login</a
+                  >
+                </li>
+                <li class="navbar-btn">
+                  <a href="" class="button" id="signup">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+    
+            
+          </nav>
+        <!-- -----------------------------------------------company---------------------------------------------------------------- -->
+        <div class="company">
+          <div class="img">
+            <img src="https://raw.githubusercontent.com/pico-india/main-django/main/static/about-team.jpg" alt="" />
+          </div>
+          <div class="company-info">
+            <span>FIND YOUR NEXT FAVOURITE MEAL WITH <span class="our">KITCHENLY!</span></span>
+            <p>
+              Welcome to our website, where we help you solve the age-old question of <b>"what should I cook today?"</b> We understand that sometimes it can be challenging to come up with new meal ideas, especially if you're short on time or feeling uninspired. That's where we come in.
+
+              Our website is designed to be a simple and easy-to-use resource for anyone looking for new meal ideas. Whether you're a busy parent trying to feed the family, a college student on a budget, or just someone who loves to cook and experiment with new flavors, we've got you covered.
+              
+              Our website features a variety of dishes to choose from, all organized by category so you can easily find something that fits your preferences and dietary restrictions. We also include ingredient lists to make cooking a breeze.
+              
+              Thank you for visiting our website. We hope you find it useful and that it helps you discover new and delicious dishes to enjoy. Happy cooking!
+            </p>
+          </div>
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------team-------------------------------------------------------------- -->
+        <div class="team"><span>OUR TEAM</span></div>
+        <div class="container">
+          <div class="card">
+            <div class="card-image loading"><img src="./images/280577081_564381688538544_4168516645795941734_n (1).jpg" alt="" /></div>
+            <div class="card-info">
+              <h3 class="card-title loading"><span>Tanishq <span class="yellow-surname">Patidar</span></span></h3>
+              <p class="card-description loading">
+                <span class="personal-info">
+                  <span class="info">Full stack Development Enthusiast</span> <br>
+                  Pursuing Software Engineering (LPU X KALVI) <br>
+                  Email: <a href="mailto:'tanishq.patidar@kalvium.community'">tanishq.patidar@kalvium.community</a>
+                </span>
+              </p>
+              <div class="card-mediaIcons">
+                <a href="https://www.instagram.com/_taniishk_/" target="_blank"><i id="instagram" class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/tanishqpatidar/" target="_blank"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Tanishqpati" target="_blank"><i id="github" class="fa-brands fa-github"></i></a> 
+                    
+              </div>
+            </div>
+          </div>
+          
+          <!-- <div class="card">
+            <div class="card-image loading"><img src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" /></div>
+            <div class="card-info">
+              <h3 class="card-title loading"><span>Nikhil <span class="yellow-surname">Jaiswal</span></span></h3>
+              <p class="card-description loading">
+                <span class="personal-info">
+                  <span class="info">Marketing and Publicity Head</span> <br>
+                  Pursuing IT Engineering (VIT Mumbai) <br>
+                  Email: <a href="mailto:'nikjaiswal21@gmail.com'">nikjaiswal21@gmail.com</a>
+                </span>
+              </p>
+              <div class="card-mediaIcons">
+                <a href="#" class="loading" target="on_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="{% url 'viewprofile' 6 %}" class="loading" target="on_blank"><i><img
+                      src="https://raw.githubusercontent.com/pico-india/main-django/main/static/PICO-LOGO-SHORT.png" alt="Pico"></a></i>
+                <a href="#" class="loading" target="on_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- ----------------------------------------footer------------------------------------------ -->
+        <footer>
+            <p id="copyright">Copyright <span><i class="fa-regular fa-copyright"></i></span> 2022 kitchenly. All rights reserved</p>
+            <div class="contact-logos">
+              <a href="https://www.instagram.com/_taniishk_/" target="_blank"><i id="instagram" class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/tanishqpatidar/" target="_blank"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+             <a href="https://github.com/Tanishqpati" target="_blank"><i id="github" class="fa-brands fa-github"></i></a> 
+            </div>
+            <p>Made with <span id="heart"><i class="fa-solid fa-heart"></i></span> by Tanishq</p>
+            
+          </footer>
+          <script src="about.js"></script>           
+</body>
+
+
+
+
+
+
+
